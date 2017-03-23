@@ -1,0 +1,10 @@
+client
+dev tun
+proto udp
+remote vpn-server.example.com 1194 # This will need server address- public IP
+resolv-retry infinite
+nobind persist-key persist-tun
+ca ca.crt
+#cert client.crt
+#key client.key
+ns-cert-type server
